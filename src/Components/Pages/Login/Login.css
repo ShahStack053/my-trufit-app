@@ -1,0 +1,188 @@
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-img-div {
+    display: flex;
+    width: 45%;
+    height: 100%;
+}
+
+.gym-man-image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.login-input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 100%;
+}
+
+.input-logo-div {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 61%;
+    width: 50%;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.logo-img {
+    display: flex;
+    height: 85%;
+    width: 80%;
+}
+
+.paragraph-div {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+}
+
+.login-paragraph {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #526B78;
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-input {
+    height: 45px;
+    width: 335px;
+    border: none;
+    box-shadow: 4px 0px 30px rgba(0, 0, 0, 0.03), 0px 4px 30px rgba(0, 0, 0, 0.03), 2px -1px 2px #EFFAFF, 1px 1px 4px rgba(71, 113, 134, 0.15);
+}
+
+.login-input :where(.css-dev-only-do-not-override-ed5zg0).ant-input:placeholder-shown {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #526B78;
+}
+
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-affix-wrapper .anticon.ant-input-password-icon:hover {
+    color: #89C2DE;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-input-affix-wrapper .anticon.ant-input-password-icon {
+    color: #89C2DE;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.forget-btn-div {
+    width: 334px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.login-forget-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #5FA0C0;
+}
+
+.login-forget-btn :where(.css-dev-only-do-not-override-ed5zg0) a:active,
+:where(.css-dev-only-do-not-override-ed5zg0) a:hover {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #5FA0C0;
+}
+
+.login-button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    height: 45px;
+    width: 335px;
+    background: #F79A28;
+    border-radius: 10px
+}
+
+.model-btnDiv-login {
+    height: 10%;
+    margin-top: 10px;
+}
+
+.login-model-paragraph {
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #526B78;
+}
+
+
+@media (max-width: 768px) {
+    .login-input-div {
+        width: 100%;
+    }
+
+    .login-img-div {
+        display: none;
+    }
+
+    .input-logo-div {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .logo-div {
+        margin: 0 auto;
+        height: 20%;
+        width: 100%;
+    }
+
+    .logo-img {
+        display: flex;
+        height: 85%;
+        width: 46%;
+    }
+
+    .paragraph-div {
+        text-align: center;
+    }
+
+    .input-div {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
