@@ -1,0 +1,8 @@
+.coach-card-container {
+    position: absolute;
+    width: 520px;
+    height: 432px;
+    background: #FBFDFF;
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

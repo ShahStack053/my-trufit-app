@@ -1,0 +1,70 @@
+.widget-achievement-card {
+    width: 434px;
+    height: 139px;
+    background: #FBFDFF;
+}
+
+.widget-achievement-card-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.widget-achievement-card-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #0B0B0B;
+    opacity: 0.7;
+}
+
+.widget-achievement-card-img {
+    width: 30px;
+    height: 7px;
+}
+
+.widget-achievement-card-down {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 10px;
+}
+
+.achievement-trophy-img-selected-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 117px;
+    height: 70px;
+    background: rgba(226, 245, 255, 0.4);
+    border-radius: 5px;
+}
+
+.achievement-trophy-img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 117px;
+    height: 70px;
+}
+
+.trophy-title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: #0B0B0B;
+    opacity: 0.7;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-card .ant-card-body {
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+}

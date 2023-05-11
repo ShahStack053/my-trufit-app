@@ -1,0 +1,26 @@
+.team-card-container {
+    width: 175px;
+    height: 230px;
+    background: #CDEBFD;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.1);
+    /* border-radius: 15px; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.team-exercise-img {
+    width: 130px;
+    height: 155px;
+    margin-bottom: 20px;
+}
+
+.team-exercise-span {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: center;
+    color: #222C34;
+}

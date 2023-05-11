@@ -1,9 +1,9 @@
 import React from "react";
 import "./Login.css";
-import Man from "../../../Assets/Images/Man.png";
-import logo from "../../../Assets/Images/logo.png";
-import email from "../../../Assets/Images/email.png";
-import Lock from "../../../Assets/Images/Lock.png";
+import Man from "../../../Assets/Images/Login/Man.png";
+import logo from "../../../Assets/Images/Login/logo.png";
+import email from "../../../Assets/Images/Login/email.png";
+import Lock from "../../../Assets/Images/Login/Lock.png";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -18,10 +18,10 @@ const Login = () => {
       url: "http://52.205.1.61/app/api/version_1_3/user_login",
       data: values,
     })
-      .then(function (res) {
+      .then((res) => {
         if (res.status === 200) {
           // console.log("token==>>>", res.data.data.token);
-          navigate("/dashboard");
+          navigate("/main/dashboard");
           localStorage.setItem("AuthToken", res.data.data.token);
         }
       })
@@ -44,7 +44,7 @@ const Login = () => {
       </div>
       <div className="login-input-div">
         <div className="input-logo-div">
-          <div className="logo-div">
+          <div className="logo-login-div">
             <img className="logo-img" src={logo} alt="trufit-logo" />
           </div>
           <div className="paragraph-div">

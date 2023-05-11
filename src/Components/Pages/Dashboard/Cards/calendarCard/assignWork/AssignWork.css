@@ -1,0 +1,84 @@
+.card-container {
+    width: 460px;
+    height: 375px;
+    background: #FBFDFF;
+}
+
+.assign-work-title-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assign-work-title-span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: #0B0B0B;
+}
+
+.assign-work-navigator-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.arrow-image-btn {
+    width: 26px;
+    height: 26px;
+    background: #0081C6;
+    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.arrow-image-left {
+    width: 12px;
+    height: 13px
+}
+
+.arrow-image-right {
+    width: 12px;
+    height: 13px
+}
+
+.assign-work-detail-div {
+    padding: 20px;
+    margin-top: 30px;
+    width: 428px;
+    height: 285px;
+    background: #E2F5FF;
+    border-radius: 10px;
+}
+
+.assign-work-name-span {
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0A364B;
+}
+
+.kneeTop-image {
+    margin-top: 15px;
+    width: 387.88px;
+    height: 155px;
+    border-radius: 15px;
+}
+
+.kneeTop-detail {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #526B78;
+}

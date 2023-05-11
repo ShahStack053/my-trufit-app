@@ -1,0 +1,93 @@
+.custom-select {
+    width: 103px;
+    height: 40px;
+    background-color: #0081C6;
+    color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select option {
+    background-color: #0081C6;
+    color: #ffffff;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.custom-select :where(.css-dev-only-do-not-override-ed5zg0).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+
+    background-color: none !important;
+    border: none !important;
+    transition: none !important;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+    color: #fff;
+    /* background: #1677ff; */
+    background: rgba(248, 151, 40, 1);
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker-calendar .ant-picker-date-panel .ant-picker-content th {
+    width: 36px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0)[class^="ant-picker"] [class^="ant-picker"],
+:where(.css-dev-only-do-not-override-ed5zg0)[class*=" ant-picker"] [class^="ant-picker"],
+:where(.css-dev-only-do-not-override-ed5zg0)[class^="ant-picker"] [class*=" ant-picker"],
+:where(.css-dev-only-do-not-override-ed5zg0)[class*=" ant-picker"] [class*=" ant-picker"] {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+
+    inset-inline-end: 0;
+    bottom: 0;
+    inset-inline-start: 0;
+    z-index: 1;
+    border: none;
+}
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    padding: 0px;
+}
+
+.ant-select-icon::before {
+    color: white;
+}
