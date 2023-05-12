@@ -3,6 +3,8 @@ import "./App.css";
 import Login from "./Components/Pages/Login/Login";
 import Dashboard from "./Components/Pages/Dashboard/Dashboard";
 import Layouts from "./Components/Main/Layouts";
+import TeamDas from "./Components/Pages/TeamDashboard/TeamDas";
+import Main from "./Components/newMain/Main";
 
 function App() {
   return (
@@ -11,7 +13,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/main/*" element={<Layouts />}>
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="dashboard" element={<TeamDas />} />
+          </Route>
+          <Route path="/lay/*" element={<Main />}>
+            <Route path="das" element={<Dashboard />} />
           </Route>
         </Routes>
       </BrowserRouter>

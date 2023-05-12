@@ -2,7 +2,7 @@
     display: flex;
     background-color: white;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     padding-top: 100px;
     padding-left: 230px;
     padding-right: 50px;
@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     /* height: 100%; */
-    width: 60%;
+    /* width: 60%; */
 }
 
 .name-span {
@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 33%;
+    /* width: 33%; */
     /* height: 100%; */
 }
 

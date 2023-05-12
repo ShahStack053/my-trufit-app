@@ -1,19 +1,25 @@
+.card-calender-container {
+    /* width: 298.88px; */
+    height: 290.95px;
+    overflow-y: hidden;
+}
+
 .custom-select {
-    width: 103px;
-    height: 40px;
+    width: 70px;
+    height: 25px;
     background-color: #0081C6;
     color: #ffffff;
     border: none;
-    border-radius: 24px;
-    font-family: 'Manrope';
+    border-radius: 16px;
+    font-family: 'Manrope' !important;
     font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 800 !important;
+    font-size: 14px !important;
     outline: none;
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
-    padding: 0 20px;
+    appearance: none; */
+    /* padding: 0 20px; */
     display: flex;
     align-items: center;
 }
@@ -24,7 +30,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px;
 }
 
@@ -50,8 +56,8 @@
     width: 36px;
     font-family: 'Manrope';
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 800;
+    font-size: 12px;
     text-align: center;
     color: #000000;
 }
@@ -63,9 +69,8 @@
 
     font-family: 'Manrope';
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-
+    font-weight: 600;
+    font-size: 10px;
 }
 
 :where(.css-dev-only-do-not-override-ed5zg0).ant-picker-calendar .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
@@ -81,7 +86,7 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     color: #FFFFFF;
     background: none;
     border: none;
@@ -90,4 +95,11 @@
 
 .ant-select-icon::before {
     color: white;
+}
+
+.card-calender-container:where(.css-dev-only-do-not-override-ed5zg0).ant-card .ant-card-body {
+    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 24px;
+    padding-right: 24px;
 }

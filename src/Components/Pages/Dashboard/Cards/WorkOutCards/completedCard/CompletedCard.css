@@ -1,12 +1,7 @@
 .widget-card {
-    width: 237px;
+    /* width: 237px;*/
     height: 139px;
     background: #FBFDFF;
-}
-
-.widget-workOut-Card-up {
-    display: flex;
-    align-items: center;
 }
 
 
@@ -14,9 +9,10 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     color: #0B0B0B;
     opacity: 0.7;
+    display: flex;
 }
 
 .widget-workOut-Card-count {
@@ -24,14 +20,13 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
     color: #0B0B0B;
     margin: 5px;
     display: flex;
 }
 
 .widget-workOut-Card-percentage {
-    margin: 0;
     display: flex;
     align-items: center;
     font-family: 'Manrope';
@@ -57,7 +52,6 @@
     height: 7.45px;
 }
 
-:where(.css-dev-only-do-not-override-ed5zg0).ant-card .ant-card-body {
+.widget-card:where(.css-dev-only-do-not-override-ed5zg0).ant-card .ant-card-body {
     padding: 15px;
-    border-radius: 0 0 8px 8px;
 }

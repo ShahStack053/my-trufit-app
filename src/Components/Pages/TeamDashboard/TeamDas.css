@@ -1,0 +1,131 @@
+.teamDas-dashboard-Container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* overflow-x: hidden; */
+}
+
+.teamDas-dashboard-top-div {
+    /* height: 13%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.teamDas-welcome-span {
+    display: flex;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #0B0B0B;
+    opacity: 0.9;
+}
+
+
+.teamDas-name-badge-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.teamDas-name-span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    color: #0B0B0B;
+}
+
+.teamDas-activity-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 13px;
+}
+
+.teamDas-activity-span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: #0B0B0B;
+    display: flex;
+}
+
+/* 
+.dashboard-lower-container {
+    background-color: purple;
+    width: 100vw;
+    height: 100vh;
+} */
+
+.teamDas-lower-main {
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 25px;
+}
+
+.teamDas-left-main-div {
+    display: flex;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.teamDas-widget-card-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    grid-gap: 10px;
+}
+
+.teamDas-workOut-calender-div {
+    width: 100%;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-gap: 10px;
+}
+
+.teamDas-team-card-container-div {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+}
+
+.teamDas-team-title {
+    display: flex;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: #0B0B0B;
+}
+
+.teamDas-team-card-div {
+    margin-top: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-gap: 10px;
+}
+
+.teamDas-right-main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.coach-card-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px
+}

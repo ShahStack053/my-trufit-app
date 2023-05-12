@@ -9,8 +9,8 @@ const onPanelChange = (value, mode) => {
 const Calender = () => {
   const { token } = theme.useToken();
   const wrapperStyle = {
-    width: 425,
-    height: 345,
+    // width: 425,
+    // height: 345,
     border: `1px solid ${token.colorBorderSecondary}`,
     borderRadius: token.borderRadiusLG,
   };
