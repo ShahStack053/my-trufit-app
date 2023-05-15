@@ -1,0 +1,136 @@
+.create-workout-container {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 25px;
+}
+
+.create-workout-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-workout-title-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.create-workout-title-span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B0B0B;
+    display: flex;
+}
+
+.create-workout-input-div {
+    width: 100%;
+}
+
+.create-workout-exercises-btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.exercises-title-span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0A364B;
+}
+
+.add-exercises-btn {
+    box-sizing: border-box;
+    width: 140px;
+    height: 35px;
+    border: 2px solid #0081C6;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0081C6;
+    filter: drop-shadow(1px 1px 2px rgba(71, 42, 6, 0.1));
+    border-radius: 32px;
+    background: none;
+}
+
+.create-workout-exercises-div {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 15px
+}
+
+.save-workout-btn-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 35px;
+
+}
+
+.save-workout-btn {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    width: 200px;
+    height: 45px;
+    background: #F79A28;
+    box-shadow: 1px 1px 2px rgba(71, 42, 6, 0.1);
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.checkbox-line {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    color: #617884;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    width: 200px;
+}
+
+.checkbox-line label {
+    margin-right: 10px;
+}
+
+.create-workout-right {
+    width: 100%;
+}
+
+
+.create-workout-input-div :where(.css-dev-only-do-not-override-ed5zg0).ant-input:placeholder-shown {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #526B78;
+}
+
+.create-workout-input-div :where(.css-dev-only-do-not-override-ed5zg0).ant-input {
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 4px 0px 30px rgba(0, 0, 0, 0.03), 0px 4px 30px rgba(0, 0, 0, 0.03), 2px -1px 2px #EFFAFF, 1px 1px 4px rgba(71, 113, 134, 0.15);
+    border-radius: 10px;
+    border: none;
+}
+
+.create-workout-input-div textarea:where(.css-dev-only-do-not-override-ed5zg0).ant-input {
+    max-width: 100%;
+    height: auto;
+    min-height: 80px;
+}

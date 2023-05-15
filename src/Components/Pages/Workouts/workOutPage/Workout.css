@@ -1,0 +1,49 @@
+.workout-container {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    grid-gap: 25px;
+}
+
+.workout-left-div {
+    width: 100%;
+}
+
+.workout-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.workout-title-span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B0B0B;
+    display: flex;
+}
+
+.create-workout-btn {
+    border: none;
+    width: 150px;
+    height: 40px;
+    background: #0081C6;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+
+}
+
+.workout-cards-div {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px
+}
+
+.workout-right-div {
+    width: 100%;
+}

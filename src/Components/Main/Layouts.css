@@ -1,90 +1,15 @@
-.sideBar-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* :where(.css-dev-only-do-not-override-ed5zg0).ant-menu-light .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-ed5zg0).ant-menu-light>.ant-menu .ant-menu-item-selected {
+    color: white !important;
+    background-color: #0081C6 !important;
+} */
+
+:where(.css-dev-only-do-not-override-ed5zg0).ant-menu-light .ant-menu-item-selected {
+    color: white !important;
+    background-color: #0081C6 !important;
 }
 
-.sider-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 45px;
-    border: none;
-    background: #FFFFFF;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
-    border-radius: 36px;
-    overflow: hidden;
-}
-
-.sider-home-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 45px;
-    border: none;
-    background: #0081C6;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
-    border-radius: 36px;
-    overflow: hidden;
-}
-
-.logout-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120px;
-    /* background-color: purple; */
-}
-
-.logout-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 45px;
-    border: none;
-    background: #FFFFFF;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
-    border-radius: 36px;
-    overflow: hidden;
-}
-
-.logout-img {
-    width: 20.39px;
-    height: 25px;
-}
-
-.ant-menu-inline .ant-menu-item {
-    height: 50px;
-    width: 88px;
-}
-
-.ant-menu-inline .ant-menu-item:hover {
-    height: 50px;
-    width: 88px;
-}
-
-.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    border: none;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(207, 28, 28, 0.12);
-    border-radius: 36px; */
-    padding: 0px;
-    margin-bottom: 8px;
-}
-
-.ant-layout-sider:where(.css-dev-only-do-not-override-ed5zg0).ant-layout .ant-layout-sider {
-
-    flex: 0 0 120px;
-    max-width: 200px;
-    min-width: 80px;
-    width: 800px;
-
+:where(.css-dev-only-do-not-override-ed5zg0).ant-menu-light>.ant-menu .ant-menu-item-selected {
+    color: white !important;
+    background-color: #0081C6 !important;
 }

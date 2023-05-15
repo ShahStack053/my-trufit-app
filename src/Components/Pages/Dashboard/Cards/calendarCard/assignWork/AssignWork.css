@@ -27,27 +27,23 @@
 }
 
 .arrow-image-btn {
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
     background: #0081C6;
     box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
     border-radius: 30px;
     border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     margin-left: 10px;
 }
 
-.arrow-image-left {
-    width: 9px;
-    height: 14px
+.arrow-image {
+    width: 10px;
+    height: 14px;
 }
 
-.arrow-image-right {
-    width: 9px;
-    height: 14px
-}
 
 .assign-work-detail-div {
     padding: 15px;

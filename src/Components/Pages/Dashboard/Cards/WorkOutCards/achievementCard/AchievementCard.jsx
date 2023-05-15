@@ -27,7 +27,7 @@ const AchievementCard = () => {
             <img
               src={medal}
               alt="medal"
-              style={{ height: 35, width: 35, marginTop: 5 }}
+              style={{ height: 35, width: 35, marginTop: 5, marginBottom: 5 }}
             />
             <span className="trophy-title">Holiday Champion</span>
           </div>
@@ -35,7 +35,7 @@ const AchievementCard = () => {
             <img
               src={starBadge}
               alt="starBadge"
-              style={{ height: 35, width: 35, marginTop: 5 }}
+              style={{ height: 35, width: 35, marginTop: 5, marginBottom: 5 }}
             />
             <span className="trophy-title">Holiday Commitment</span>
           </div>
@@ -43,7 +43,7 @@ const AchievementCard = () => {
             <img
               src={trophy}
               alt="trophy"
-              style={{ height: 35, width: 35, marginTop: 5 }}
+              style={{ height: 35, width: 35, marginTop: 5, marginBottom: 5 }}
             />
             <span className="trophy-title">Med Ball Challenge</span>
           </div>

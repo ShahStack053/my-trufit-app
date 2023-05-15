@@ -1,0 +1,43 @@
+.excercise-card-container-div {
+    background: rgba(238, 248, 254, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.exercises-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.exercises-title-span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0A364B;
+}
+
+.exercises-cancel-btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    background-color: none;
+    background: none;
+}
+
+.exercises-detail-div {
+    display: flex;
+    /* margin-top: 10px; */
+}
+
+.exercises-detail-paragraph {
+    display: flex;
+    text-align: justify;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #526B78;
+}

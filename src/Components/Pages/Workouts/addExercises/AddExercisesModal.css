@@ -1,0 +1,8 @@
+.add-exercise-modal-container :where(.css-dev-only-do-not-override-ed5zg0).ant-input:placeholder-shown {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2D2D2D;
+    opacity: 0.6;
+}

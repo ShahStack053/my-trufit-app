@@ -1,4 +1,5 @@
 import React from "react";
+import "./Main.css";
 import { Layout, Menu } from "antd";
 import confirm from "antd/es/modal/confirm";
 import { ExclamationCircleFilled } from "@ant-design/icons";

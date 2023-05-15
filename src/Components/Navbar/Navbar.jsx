@@ -8,15 +8,18 @@ import userImage from "../../Assets/Images/Header/userImage.png";
 import NotificationIcon from "../../Assets/Images/Header/Notification.png";
 import Calender from "../../Assets/Images/Header/menu-board.png";
 
-const Navbar = () => {
+const Navbar = ({ setCollapsed, collapsed }) => {
   return (
     <div className="navbar-container">
       <div className="navbar-left-div">
         <div className="logo-div">
           <img src={Logo} alt="header-logo" className="navbar-logo" />
-          <span className="navbar-burger-span">
+          <button
+            className="navbar-burger-span"
+            onClick={() => setCollapsed(!collapsed)}
+          >
             <img src={Burger} alt="header-burger" className="navbar-burger" />
-          </span>
+          </button>
         </div>
         <div className="search-div">
           <Input

@@ -1,0 +1,43 @@
+.add-exercise-card-container {
+    /* padding: 15px; */
+    margin-top: 15px;
+    /* width: 428px; */
+    /* height: 285px; */
+    background: #E2F5FF;
+    border-radius: 10px;
+}
+
+.add-exercise-card-title-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-exercise-card-name-span {
+    display: flex;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #0A364B;
+}
+
+.add-exercise-card-workout-image {
+    margin-top: 8px;
+    width: 100%;
+}
+
+.add-exercise-card-workout-detail {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #526B78;
+    text-align: justify;
+}
+
+.add-exercise-card-container:where(.css-dev-only-do-not-override-ed5zg0).ant-card .ant-card-body {
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+}
