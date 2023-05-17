@@ -88,11 +88,11 @@
 }
 
 
-:where(.css-dev-only-do-not-override-ed5zg0).ant-input-affix-wrapper .anticon.ant-input-password-icon:hover {
+.login-input :where(.css-dev-only-do-not-override-ed5zg0).ant-input-affix-wrapper .anticon.ant-input-password-icon:hover {
     color: #89C2DE;
 }
 
-:where(.css-dev-only-do-not-override-ed5zg0).ant-input-affix-wrapper .anticon.ant-input-password-icon {
+.login-input:where(.css-dev-only-do-not-override-ed5zg0).ant-input-affix-wrapper .anticon.ant-input-password-icon {
     color: #89C2DE;
     cursor: pointer;
     transition: all 0.3s;
@@ -126,8 +126,8 @@
 .login-button {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
     color: #FFFFFF;
     border: none;
     height: 45px;

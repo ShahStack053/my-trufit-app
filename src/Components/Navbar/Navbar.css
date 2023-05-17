@@ -1,99 +1,43 @@
 .navbar-container {
-    background-color: white;
     width: 100%;
     height: 100%;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
     display: grid;
-    grid-template-columns: 6fr 6fr;
-    padding-right: 20px;
-    padding-left: 30px;
+    grid-template-columns: 1fr 6fr 6fr;
 }
 
 .navbar-left-div {
-    /* width: 50%; */
     /* background-color: red; */
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .logo-div {
-    width: 25%;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 15px;
+    justify-content: center;
 }
 
 .navbar-logo {
     height: 55.91px;
-    width: 34.17px;
-}
-
-.navbar-burger-btn {
-    width: 40px;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    border-radius: 50px;
-    justify-content: center;
-    border: none;
-    background: #FFFFFF;
-    box-shadow: 4px 4px 17px rgba(38, 51, 77, 0.15);
-    cursor: pointer
+    width: 33.72px;
+    cursor: pointer;
 }
 
 .navbar-burger {
-    height: 16.51px;
-    width: 23.6px;
-}
-
-.search-div {
-    width: 75%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search-div :where(.css-dev-only-do-not-override-ed5zg0).ant-input:placeholder-shown {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    color: #2D2D2D;
-    opacity: 0.6;
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
 }
 
 .navbar-right-div {
-    /* width: 50%; */
-    /* background-color: blue; */
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-.navbar-calender-span {
-    width: 40px;
-    display: flex;
-    height: 40px;
-    align-items: center;
-    border-radius: 50px;
-    justify-content: center;
-    border: none;
-    background: rgba(57, 126, 193, 0.1);
-    box-shadow: 4px 4px 17px rgba(38, 51, 77, 0.15);
-}
-
-.navbar-calender {
-    width: 17.5px;
-    height: 15.03px;
-    cursor: pointer
 }
 
 .navbar-bell-span {
@@ -106,18 +50,17 @@
     border: none;
     background: rgba(57, 126, 193, 0.1);
     box-shadow: 4px 4px 17px rgba(38, 51, 77, 0.15);
-    margin-left: 20px;
 }
 
 .navbar-bell {
-    width: 19.27px;
-    height: 18px;
+    width: 17.05px;
+    height: 20px;
     cursor: pointer
 }
 
 .navbar-user-image {
     height: 50px;
     width: 50px;
-    margin-left: 30px;
+    margin: 0px 24px;
     cursor: pointer
 }

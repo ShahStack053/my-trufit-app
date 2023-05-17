@@ -1,7 +1,10 @@
 .widget-achievement-card {
     /* width: 434px;*/
     height: 139px;
-    background: #FBFDFF;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
 }
 
 .widget-achievement-card-up {
@@ -15,13 +18,13 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     color: #0B0B0B;
     opacity: 0.7;
 }
 
 .widget-achievement-card-img {
-    width: 22px;
+    width: 35px;
     height: 7px;
 }
 

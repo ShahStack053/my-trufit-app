@@ -66,13 +66,15 @@ const Workout = () => {
         </div>
       </div>
       <div className="workout-right-div">
-        <div className="teamDas-activity-div">
-          <span className="teamDas-activity-span">Activity</span>
+        <div className="workout-activity-div">
+          <span className="workout-activity-span">Activity</span>
         </div>
-        <div className="coach-card-div">
+        <div className="workout-coach-card-div">
           <CoachCard />
           <CoachCard />
-        </div>{" "}
+          <CoachCard />
+          <CoachCard />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 .team-card-container {
     background: #CDEBFD;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.1);
-    /* border-radius: 15px; */
+    border-radius: 15px;
+    border: none;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

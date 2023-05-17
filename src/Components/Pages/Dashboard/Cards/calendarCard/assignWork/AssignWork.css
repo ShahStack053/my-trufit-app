@@ -1,7 +1,10 @@
 .card-container {
     /* width: 460px;*/
     height: 300px;
-    background: #FBFDFF;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
 }
 
 .assign-work-title-div {
@@ -66,6 +69,7 @@
     margin-top: 15px;
     width: 100%;
     /* width: 220.88px; */
+    height: 110px;
 }
 
 .kneeTop-detail {

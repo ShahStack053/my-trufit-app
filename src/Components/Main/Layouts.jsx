@@ -1,17 +1,12 @@
-import {
-  FileTextOutlined,
-  MessageOutlined,
-  UploadOutlined,
-  TeamOutlined,
-  HomeOutlined,
-} from "@ant-design/icons";
 import confirm from "antd/es/modal/confirm";
 import { ExclamationCircleFilled } from "@ant-design/icons";
 import Arm from ".././../Assets/Images/Sider/Arm.png";
 import Dumble from ".././../Assets/Images/Sider/Dumble.png";
-import Thumb from ".././../Assets/Images/Sider/thumb.png";
+import Home from ".././../Assets/Images/Sider/home.png";
 import logout from ".././../Assets/Images/Sider/logout.png";
-import { Button, Layout, Menu, theme } from "antd";
+import Group from ".././../Assets/Images/Sider/groupIcon.png";
+import File from ".././../Assets/Images/Sider/file.png";
+import { Layout, Menu, theme } from "antd";
 import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
@@ -27,19 +22,14 @@ const Layouts = () => {
     if (e.key === "1") {
       navigate("/main/dashboard");
     } else if (e.key === "2") {
-      navigate("/main/team");
+      navigate("/main/groups");
     } else if (e.key === "3") {
       navigate("/main/workout");
     } else if (e.key === "4") {
-      navigate("/main/exercise");
+      navigate("/main/exercises");
     } else if (e.key === "5") {
-      let label = "User";
-      navigate("/main/chat", { state: { label } });
+      navigate("/main/playlist");
     } else if (e.key === "6") {
-      navigate("/main/favourite");
-    } else if (e.key === "7") {
-      navigate("/main/settings");
-    } else if (e.key === "8") {
       mylogout();
     }
   };
@@ -68,24 +58,31 @@ const Layouts = () => {
         style={{
           display: "flex",
           padding: 0,
+          height: 75,
           background: colorBgContainer,
+          borderBottom: "1px solid rgba(0, 0, 0, 0.2)",
+          // position: "fixed",
+          // top: 0,
+          // left: 0,
+          // zIndex: 1,
+          width: "100%",
         }}
       >
-        {/* <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: "16px",
-              width: 64,
-              height: 64,
-            }}
-          /> */}
         <Navbar collapsed={collapsed} setCollapsed={setCollapsed} />
       </Header>
       <Layout>
-        <Sider trigger={null} collapsible collapsed={collapsed} theme="light">
-          <div className="logo" />
+        <Sider
+          className="sider-class"
+          trigger={null}
+          collapsible
+          collapsed={collapsed}
+          theme="light"
+          style={{
+            borderRight: "1px solid rgba(0, 0, 0, 0.2)",
+            background: colorBgContainer,
+            width: 256,
+          }}
+        >
           <Menu
             theme="light"
             mode="inline"
@@ -94,13 +91,21 @@ const Layouts = () => {
             items={[
               {
                 key: "1",
-                icon: <HomeOutlined />,
+                icon: (
+                  <img src={Home} alt="Arm" style={{ height: 15, width: 20 }} />
+                ),
                 label: "Home",
               },
               {
                 key: "2",
-                icon: <TeamOutlined />,
-                label: "Teams",
+                icon: (
+                  <img
+                    src={Group}
+                    alt="Arm"
+                    style={{ height: 15, width: 20 }}
+                  />
+                ),
+                label: "Groups",
               },
               {
                 key: "3",
@@ -118,43 +123,29 @@ const Layouts = () => {
                     style={{ height: 15, width: 20 }}
                   />
                 ),
-                label: "Exercise",
+                label: "Exercises",
               },
               {
                 key: "5",
-                icon: <MessageOutlined />,
-                label: "Chats",
-              },
-              {
-                key: "6",
                 icon: (
-                  <img
-                    src={Thumb}
-                    alt="Arm"
-                    style={{ height: 15, width: 15 }}
-                  />
+                  <img src={File} alt="Arm" style={{ height: 15, width: 20 }} />
                 ),
-                label: "Favourite",
+                label: "Playlists",
               },
-              {
-                key: "7",
-                icon: <FileTextOutlined />,
-                label: "Record",
-              },
-              {
-                key: "8",
-                icon: (
-                  <img
-                    src={logout}
-                    alt="Arm"
-                    style={{ height: 15, width: 15 }}
-                  />
-                ),
-                label: "Logout",
-              },
+              // {
+              //   key: "6",
+              //   icon: (
+              //     <img
+              //       src={logout}
+              //       alt="Arm"
+              //       style={{ height: 15, width: 15 }}
+              //     />
+              //   ),
+              //   label: "Logout",
+              // },
             ]}
           />
-          {/* <div className="logout-div">
+          <div className="logout-div">
             <button
               style={{
                 display: "flex",
@@ -171,11 +162,10 @@ const Layouts = () => {
               />{" "}
               Logout
             </button>
-          </div> */}
+          </div>
         </Sider>
         <Content
           style={{
-            margin: "24px 16px",
             padding: 24,
             minHeight: 280,
             background: colorBgContainer,

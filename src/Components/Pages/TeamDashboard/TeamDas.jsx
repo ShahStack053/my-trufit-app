@@ -1,7 +1,5 @@
 import React from "react";
 import "./TeamDas.css";
-import Star from "../../../Assets/Images/Dashboard/Star.png";
-import badge from "../../../Assets/Images/Dashboard/badge.png";
 import CompletedCard from "../Dashboard/Cards/WorkOutCards/completedCard/CompletedCard";
 import AchievementCard from "../Dashboard/Cards/WorkOutCards/achievementCard/AchievementCard";
 import AssignWork from "../Dashboard/Cards/calendarCard/assignWork/AssignWork";
@@ -13,24 +11,11 @@ import CoachCard from "../Dashboard/Cards/coachCard/CoachCard";
 const TeamDas = () => {
   return (
     <div className="teamDas-dashboard-Container">
-      <div className="teamDas-dashboard-top-div ">
-        <span className="teamDas-welcome-span">Welcome</span>
-      </div>
       <div className="teamDas-lower-main">
         <div className="teamDas-left-main-div">
           <div className="teamDas-name-badge-div">
+            <span className="teamDas-welcome-span">Welcome</span>
             <span className="teamDas-name-span">Clayton Santos</span>
-            <img
-              src={badge}
-              alt="badge"
-              style={{
-                width: 22,
-                height: 22,
-                marginRight: 12,
-                marginLeft: 12,
-              }}
-            />
-            <img src={Star} alt="Star" style={{ width: 24, height: 24 }} />
           </div>
           <div className="teamDas-widget-card-div">
             <CompletedCard />
@@ -59,6 +44,8 @@ const TeamDas = () => {
             <span className="teamDas-activity-span">Activity</span>
           </div>
           <div className="coach-card-div">
+            <CoachCard />
+            <CoachCard />
             <CoachCard />
             <CoachCard />
           </div>

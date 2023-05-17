@@ -383,10 +383,14 @@ const CreateWorkOut = () => {
         </div>
       </div>
       <div className="create-workout-right">
-        <div className="teamDas-activity-div">
-          <span className="teamDas-activity-span">Activity</span>
+        <div className="create-workout-activity-div">
+          <span className="create-workout-activity-span">Activity</span>
         </div>
-        <div className="coach-card-div">
+        <div className="create-workout-coach-card-div">
+          <CoachCard />
+          <CoachCard />
+          <CoachCard />
+          <CoachCard />
           <CoachCard />
           <CoachCard />
         </div>

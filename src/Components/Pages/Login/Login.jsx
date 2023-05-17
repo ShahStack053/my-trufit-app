@@ -86,6 +86,13 @@ const Login = () => {
                     />
                   }
                   placeholder="Enter Email"
+                  // style={{
+                  //   fontFamily: "Poppins",
+                  //   fontWeight: 500,
+                  //   fontSize: 14,
+                  //   fontStyle: "normal",
+                  //   color: "#526B78",
+                  // }}
                 />
               </Form.Item>
               <Form.Item
