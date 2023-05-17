@@ -14,7 +14,7 @@ const Sender = () => {
     fontFamily: "Manrope",
     fontStyle: "normal",
     fontWeight: 800,
-    fontSize: "16px",
+    fontSize: "14px",
     color: "#0B0B0B",
   };
   //   const dropDownStyle = {
@@ -39,6 +39,7 @@ const Sender = () => {
       <Card className="card-calender-container">
         <Calendar
           fullscreen={false}
+          style={{ height: "260px" }}
           onPanelChange={onPanelChange}
           headerRender={({ value, type, onChange, onTypeChange }) => {
             const year = value.year();

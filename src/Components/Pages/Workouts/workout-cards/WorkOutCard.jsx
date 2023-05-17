@@ -7,13 +7,18 @@ import Delete from "../../../../Assets/Images/workout/Delete.png";
 import confirm from "antd/es/modal/confirm";
 import { ExclamationCircleFilled } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
-const WorkOutCard = () => {
+const WorkOutCard = ({ description, title, id, onDelete }) => {
   const navigate = useNavigate();
   const editClickHandler = (label) => {
-    navigate("/main/createworkout", { state: { label } });
+    navigate("/main/createworkout", {
+      state: { label, id, description, title },
+    });
   };
   const deleteClickHandler = () => {
+    const formData = new FormData();
+    formData.append("workout_id", id);
     confirm({
       title: "Do you want to Delete this workout?",
       icon: <ExclamationCircleFilled style={{ color: " #faad14" }} />,
@@ -24,13 +29,34 @@ const WorkOutCard = () => {
       okButtonProps: { style: { float: "right", marginRight: 10 } },
       cancelButtonProps: { style: { float: "right" } },
       onOk() {
-        console.log("deleted");
-        Modal.success({
-          content: "Workout Deleted Successfully",
-        });
+        axios({
+          method: "Post",
+          url: `http://52.205.1.61/app/api/version_1_3/delete_workout`,
+          headers: {
+            Token: localStorage.AuthToken,
+            UserId: localStorage.userId,
+          },
+          data: formData,
+        }).then(
+          (res) => {
+            Modal.success({
+              content: "Workout Deleted Successfully",
+            });
+            onDelete(id);
+          },
+          (err) => {
+            Modal.error({
+              title: "Failed",
+              content: "Workout Deletion Failed",
+            });
+          }
+        );
       },
       onCancel() {
-        console.log("Cancel");
+        Modal.error({
+          title: "Failed",
+          content: "Workout Not Deleted",
+        });
       },
     });
   };
@@ -48,6 +74,7 @@ const WorkOutCard = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
           }}
           onClick={() => editClickHandler("Edit")}
         >
@@ -70,6 +97,7 @@ const WorkOutCard = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            cursor: "pointer",
           }}
           onClick={deleteClickHandler}
         >
@@ -87,23 +115,20 @@ const WorkOutCard = () => {
   return (
     <Card className="workout-card-container">
       <div className="workout-card-title-div">
-        <span className="workout-card-title-span">Shoulder Roll</span>
+        <span className="workout-card-title-span">{title}</span>
         <Dropdown menu={menuProps}>
           {/* <Space>{<DashOutlined />}</Space> */}
           <Space>
             <img
               src={verticalDashed}
               alt="vertical dashes"
-              style={{ width: 12, height: 12 }}
+              style={{ width: 12, height: 12, cursor: "pointer" }}
             />
           </Space>
         </Dropdown>
       </div>
       <div className="workout-card-detail-div">
-        <p className="workout-card-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fuga
-          minus saepe aliquid similique tenetur,
-        </p>
+        <p className="workout-card-paragraph">{description}</p>
       </div>
       <div className="workout-card-assign-btn-div">
         <button className="assign-workout-btn">Assign Workout</button>

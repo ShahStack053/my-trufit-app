@@ -8,9 +8,9 @@
 }
 
 .team-exercise-img {
-    width: 80px;
-    height: 90px;
-    margin-bottom: 15px;
+    width: 90px;
+    height: 110px;
+    margin-bottom: 20px;
 }
 
 .team-exercise-span {
@@ -19,7 +19,7 @@
     justify-content: flex-start;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 12px;
     color: #222C34;
 }

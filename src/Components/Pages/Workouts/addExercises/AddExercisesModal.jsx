@@ -62,13 +62,14 @@ const AddExercisesModal = () => {
               fontFamily: "Poppins",
               fontWeight: 500,
               fontSize: 18,
+              marginTop: 20,
             },
           }}
         >
           <Input
             style={{
               marginTop: 15,
-              marginBottom: 15,
+              marginBottom: 30,
               borderRadius: 10,
               width: "100%",
               height: 45,
@@ -78,7 +79,7 @@ const AddExercisesModal = () => {
             }}
             placeholder="Type to Search Here"
           />
-          <div className="add-exercide-modal-card-div">
+          <div className="add-exercise-modal-card-div">
             <AddExerciseCard />
             <AddExerciseCard />
           </div>

@@ -9,23 +9,22 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 12px;
     color: #0B0B0B;
     opacity: 0.7;
     display: flex;
 }
 
 .widget-workOut-Card-count {
-
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
     color: #0B0B0B;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     display: flex;
 }
 
@@ -35,13 +34,14 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: #63BA54;
+    margin-bottom: 0;
 }
 
 .arrow-span {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     background: rgba(248, 151, 40, 0.1);
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
 }
 
 .arrow-up-img {
-    width: 11.17px;
+    width: 8.17px;
     height: 7.45px;
 }
 

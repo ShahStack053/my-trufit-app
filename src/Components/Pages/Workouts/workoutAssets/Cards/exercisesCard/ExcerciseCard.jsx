@@ -3,25 +3,24 @@ import "./ExcerciseCard.css";
 import { Card } from "antd";
 import crossBtn from "../../../../../../Assets/Images/workout/crossBtn.png";
 
-const ExcerciseCard = () => {
+const ExcerciseCard = ({ id, title, description, onRemoveCard }) => {
+  const handleRemoveClick = () => {
+    onRemoveCard(id);
+  };
   return (
     <Card className="excercise-card-container-div">
       <div className="exercises-title-div">
-        <span className="exercises-title-span">High Knee Top</span>
-        <button className="exercises-cancel-btn">
+        <span className="exercises-cardtitle-span ">{title}</span>
+        <button className="exercises-cancel-btn" onClick={handleRemoveClick}>
           <img
             src={crossBtn}
             alt="cross-circle"
-            style={{ width: 30, height: 30 }}
+            style={{ width: 25, height: 25 }}
           />
         </button>
       </div>
       <div className="exercises-detail-div">
-        <p className="exercises-detail-paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vitae
-          soluta fugit vel temporibus commodi at asperiores esse. Blanditiis
-          officia, rem ex placeat aliquam fugiat perferendis,
-        </p>
+        <p className="exercises-detail-paragraph">{description}</p>
       </div>
     </Card>
   );

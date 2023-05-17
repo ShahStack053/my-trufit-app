@@ -15,7 +15,7 @@ const Navbar = ({ setCollapsed, collapsed }) => {
         <div className="logo-div">
           <img src={Logo} alt="header-logo" className="navbar-logo" />
           <button
-            className="navbar-burger-span"
+            className="navbar-burger-btn"
             onClick={() => setCollapsed(!collapsed)}
           >
             <img src={Burger} alt="header-burger" className="navbar-burger" />

@@ -133,7 +133,8 @@
     height: 45px;
     width: 335px;
     background: #F79A28;
-    border-radius: 10px
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .model-btnDiv-login {

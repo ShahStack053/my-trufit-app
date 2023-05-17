@@ -25,6 +25,7 @@
 .add-exercise-card-workout-image {
     margin-top: 8px;
     width: 100%;
+    height: 150px;
 }
 
 .add-exercise-card-workout-detail {

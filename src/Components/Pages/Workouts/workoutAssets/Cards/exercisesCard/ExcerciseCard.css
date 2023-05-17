@@ -10,11 +10,11 @@
     justify-content: space-between;
 }
 
-.exercises-title-span {
+.exercises-cardtitle-span {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     color: #0A364B;
 }
 
@@ -24,6 +24,7 @@
     align-items: center;
     background-color: none;
     background: none;
+    cursor: pointer
 }
 
 .exercises-detail-div {
@@ -37,7 +38,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     text-transform: capitalize;
     color: #526B78;
 }

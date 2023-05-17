@@ -24,27 +24,19 @@ const AchievementCard = () => {
         </div>
         <div className="widget-achievement-card-down">
           <div className="achievement-trophy-img-selected-div">
-            <img
-              src={medal}
-              alt="medal"
-              style={{ height: 35, width: 35, marginTop: 5, marginBottom: 5 }}
-            />
+            <img src={medal} alt="medal" style={{ height: 35, width: 35 }} />
             <span className="trophy-title">Holiday Champion</span>
           </div>
           <div className="achievement-trophy-img-div">
             <img
               src={starBadge}
               alt="starBadge"
-              style={{ height: 35, width: 35, marginTop: 5, marginBottom: 5 }}
+              style={{ height: 32, width: 32 }}
             />
             <span className="trophy-title">Holiday Commitment</span>
           </div>
           <div className="achievement-trophy-img-div">
-            <img
-              src={trophy}
-              alt="trophy"
-              style={{ height: 35, width: 35, marginTop: 5, marginBottom: 5 }}
-            />
+            <img src={trophy} alt="trophy" style={{ height: 33, width: 33 }} />
             <span className="trophy-title">Med Ball Challenge</span>
           </div>
         </div>

@@ -6,3 +6,12 @@
     color: #2D2D2D;
     opacity: 0.6;
 }
+
+.add-exercise-modal-card-div {
+    /* background-color: #f1f1f1; */
+    height: 300px;
+    overflow: auto;
+    /* margin: 20px; */
+    text-align: justify;
+    /* padding: 20px; */
+}

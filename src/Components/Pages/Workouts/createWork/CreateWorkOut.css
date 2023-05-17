@@ -59,13 +59,36 @@
     filter: drop-shadow(1px 1px 2px rgba(71, 42, 6, 0.1));
     border-radius: 32px;
     background: none;
+    cursor: pointer;
+}
+
+.create-workout-exercise-container-div {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 35px;
 }
 
 .create-workout-exercises-div {
-    margin-top: 35px;
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 15px
+}
+
+.no-exercises-div {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+.no-exercises-span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #526B78;
 }
 
 .save-workout-btn-div {
@@ -73,7 +96,6 @@
     flex-direction: column;
     align-items: flex-start;
     margin-top: 35px;
-
 }
 
 .save-workout-btn {
@@ -89,6 +111,7 @@
     border-radius: 10px;
     border: none;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .checkbox-line {
@@ -112,6 +135,13 @@
     width: 100%;
 }
 
+.create-workout-input-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
 
 .create-workout-input-div :where(.css-dev-only-do-not-override-ed5zg0).ant-input:placeholder-shown {
     font-family: 'Poppins';
@@ -133,4 +163,56 @@
     max-width: 100%;
     height: auto;
     min-height: 80px;
+}
+
+
+.title-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 4px 0px 30px rgba(0, 0, 0, 0.03), 0px 4px 30px rgba(0, 0, 0, 0.03), 2px -1px 2px #EFFAFF, 1px 1px 4px rgba(71, 113, 134, 0.15);
+    border-radius: 10px;
+    padding: 0 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #526B78;
+    outline: none;
+}
+
+.desc-input {
+    width: 100%;
+    height: 80px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 4px 0px 30px rgba(0, 0, 0, 0.03), 0px 4px 30px rgba(0, 0, 0, 0.03), 2px -1px 2px #EFFAFF, 1px 1px 4px rgba(71, 113, 134, 0.15);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #526B78;
+    display: flex;
+    outline: none;
+}
+
+.create-workout-exercises-btn-div :where(.css-dev-only-do-not-override-ed5zg0).ant-input:placeholder-shown {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2D2D2D;
+    opacity: 0.6;
+}
+
+.add-exercise-modal-card-div {
+    /* background-color: #f1f1f1; */
+    height: 300px;
+    overflow: auto;
+    /* margin: 20px; */
+    text-align: justify;
+    /* padding: 20px; */
 }

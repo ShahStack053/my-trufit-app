@@ -11,8 +11,6 @@ import { Form, Input } from "antd";
 const Login = () => {
   const navigate = useNavigate();
   const onFinish = (values) => {
-    console.log("Received values of form: ", values);
-
     axios({
       method: "Post",
       url: "http://52.205.1.61/app/api/version_1_3/user_login",
@@ -20,9 +18,15 @@ const Login = () => {
     })
       .then((res) => {
         if (res.status === 200) {
-          // console.log("token==>>>", res.data.data.token);
           navigate("/main/dashboard");
-          localStorage.setItem("AuthToken", res.data.data.token);
+          // const userData = {
+          //   Token: res.data.data.Token,
+          //   userId: res.data.data.user_id,
+          // };
+
+          // localStorage.setItem("userData", JSON.stringify(userData));
+          localStorage.setItem("userId", res.data.data.user_id);
+          localStorage.setItem("AuthToken", res.data.data.Token);
         }
       })
       .catch((err) => {

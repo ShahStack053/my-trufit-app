@@ -1,14 +1,15 @@
 .teamDas-dashboard-Container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     /* overflow-x: hidden; */
 }
 
 .teamDas-dashboard-top-div {
-    /* height: 13%; */
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: purple; */
 }
 
 .teamDas-welcome-span {
@@ -21,11 +22,31 @@
     opacity: 0.9;
 }
 
+.teamDas-lower-main {
+    /* background-color: black; */
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-gap: 25px;
+    height: 785px;
+}
+
+.teamDas-left-main-div {
+    display: flex;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+    height: 780px;
+}
 
 .teamDas-name-badge-div {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    height: 40px;
 }
 
 .teamDas-name-span {
@@ -36,63 +57,27 @@
     color: #0B0B0B;
 }
 
-.teamDas-activity-div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 40px;
-}
-
-.teamDas-activity-span {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    color: #0B0B0B;
-    display: flex;
-}
-
-/* 
-.dashboard-lower-container {
-    background-color: purple;
-    width: 100vw;
-    height: 100vh;
-} */
-
-.teamDas-lower-main {
-    /* background-color: red; */
-    width: 100%;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 7fr 5fr;
-    grid-gap: 25px;
-}
-
-.teamDas-left-main-div {
-    display: flex;
-    /* height: 100%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .teamDas-widget-card-div {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 2fr 3fr;
     grid-gap: 10px;
+    /* background-color: purple; */
+    height: 140px;
 }
 
 .teamDas-workOut-calender-div {
     width: 100%;
-    margin-top: 25px;
+    height: 300px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 3fr 3fr;
     grid-gap: 10px;
+    /* background-color: white; */
 }
 
 .teamDas-team-card-container-div {
-    margin-top: 25px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -104,23 +89,43 @@
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
+    font-size: 16px;
     color: #0B0B0B;
 }
 
 .teamDas-team-card-div {
-    margin-top: 25px;
+    margin-top: 20px;
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     grid-gap: 10px;
+    /* background-color: purple; */
 }
 
 .teamDas-right-main-div {
+    /* background-color: purple; */
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     width: 100%;
+    gap: 10px;
+    height: 780px;
+}
+
+.teamDas-activity-div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 34px;
+}
+
+.teamDas-activity-span {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B0B0B;
+    display: flex;
 }
 
 .coach-card-div {
