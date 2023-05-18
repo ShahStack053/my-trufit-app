@@ -39,9 +39,6 @@ const WorkOutCard = ({ description, title, id, onDelete }) => {
           data: formData,
         }).then(
           (res) => {
-            Modal.success({
-              content: "Workout Deleted Successfully",
-            });
             onDelete(id);
           },
           (err) => {
@@ -52,12 +49,7 @@ const WorkOutCard = ({ description, title, id, onDelete }) => {
           }
         );
       },
-      onCancel() {
-        Modal.error({
-          title: "Failed",
-          content: "Workout Not Deleted",
-        });
-      },
+      onCancel() {},
     });
   };
   const items = [

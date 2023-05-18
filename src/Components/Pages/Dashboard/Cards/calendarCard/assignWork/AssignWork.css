@@ -3,7 +3,7 @@
     height: 300px;
     border: none;
     background: #FFFFFF;
-    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, .12);
     border-radius: 10px;
 }
 
@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* background-color: purple; */
 }
 
 .assign-work-title-span {
@@ -26,26 +27,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.arrow-image-btn {
-    width: 20px;
-    height: 20px;
-    background: #0081C6;
-    box-shadow: 0px 2px 5px rgba(38, 51, 77, 0.03);
-    border-radius: 30px;
-    border: none;
-    display: flex;
+.arrow-left-image {
+    width: 25px;
     cursor: pointer;
+    /* height: 23px; */
+}
+
+.arrow-right-image {
+    width: 25px;
     margin-left: 10px;
+    /* height: 23px; */
+    cursor: pointer;
 }
-
-.arrow-image {
-    width: 9px;
-    height: 15px;
-}
-
 
 .assign-work-detail-div {
     padding: 15px;

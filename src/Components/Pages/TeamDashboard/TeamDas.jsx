@@ -7,8 +7,31 @@ import AssignWork from "../Dashboard/Cards/calendarCard/assignWork/AssignWork";
 import Sender from "../Dashboard/Cards/calendarCard/calender/Sender";
 import TeamCard from "../Dashboard/Cards/teamCards/TeamCard";
 import CoachCard from "../Dashboard/Cards/coachCard/CoachCard";
+import arrowLeft from "../../../Assets/Images/Dashboard/arrowLeft.png";
+import arrowRight from "../../../Assets/Images/Dashboard/arrowRight.png";
+import exercise1 from "../../../Assets/Images/Dashboard/exercise1.png";
+import exercise2 from "../../../Assets/Images/Dashboard/exercise2.png";
+import exercise3 from "../../../Assets/Images/Dashboard/exercise3.png";
+import exercise4 from "../../../Assets/Images/Dashboard/exercise4.png";
 
 const TeamDas = () => {
+  const scrollLeft = () => {
+    const container = document.querySelector(".team-cards-container");
+    container.scrollBy({
+      left: -500,
+      behavior: "smooth",
+    });
+  };
+
+  const scrollRight = () => {
+    const container = document.querySelector(".team-cards-container");
+    container.scrollBy({
+      left: 500,
+      behavior: "smooth",
+    });
+  };
+  const exercises = [exercise1, exercise2, exercise3, exercise4];
+  const colors = ["#CDEBFD", "#F9EBB3", "#D7FFD0", "#D9D9D9"];
   return (
     <div className="teamDas-dashboard-Container">
       <div className="teamDas-lower-main">
@@ -31,11 +54,36 @@ const TeamDas = () => {
               <span className="teamDas-team-title">Teams</span>
             </div>
             <div className="teamDas-team-card-div">
-              <TeamCard />
-              <TeamCard />
-              <TeamCard />
-              <TeamCard />
-              <TeamCard />
+              <img
+                src={arrowLeft}
+                alt="arrowLeft"
+                className="arrow-img-left"
+                onClick={scrollLeft}
+              />
+              <div className="team-cards-container">
+                <TeamCard exerciseImage={exercises[1]} color={colors[1]} />
+                <TeamCard exerciseImage={exercises[2]} color={colors[2]} />
+                <TeamCard exerciseImage={exercises[3]} color={colors[3]} />
+                <TeamCard exerciseImage={exercises[0]} color={colors[0]} />
+                <TeamCard exerciseImage={exercises[1]} color={colors[2]} />
+                <TeamCard exerciseImage={exercises[2]} color={colors[3]} />
+                <TeamCard exerciseImage={exercises[3]} color={colors[0]} />
+                <TeamCard exerciseImage={exercises[0]} color={colors[2]} />
+                <TeamCard exerciseImage={exercises[1]} color={colors[1]} />
+                <TeamCard exerciseImage={exercises[2]} color={colors[2]} />
+                <TeamCard exerciseImage={exercises[3]} color={colors[3]} />
+                <TeamCard exerciseImage={exercises[0]} color={colors[0]} />
+                <TeamCard exerciseImage={exercises[1]} color={colors[1]} />
+                <TeamCard exerciseImage={exercises[2]} color={colors[2]} />
+                <TeamCard exerciseImage={exercises[3]} color={colors[3]} />
+                <TeamCard exerciseImage={exercises[0]} color={colors[0]} />
+              </div>
+              <img
+                src={arrowRight}
+                alt="arrowRight"
+                className="arrow-img-right"
+                onClick={scrollRight}
+              />
             </div>
           </div>
         </div>

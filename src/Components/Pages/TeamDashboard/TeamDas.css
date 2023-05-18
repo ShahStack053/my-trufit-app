@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: purple;
+    /* background-color: purple; */
     height: 80vh;
 }
 
@@ -87,6 +87,7 @@
 }
 
 .teamDas-team-title {
+    margin-left: 20px;
     display: flex;
     font-family: 'Manrope';
     font-style: normal;
@@ -96,12 +97,41 @@
 }
 
 .teamDas-team-card-div {
-    margin-top: 20px;
+    display: flex;
     width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-    grid-gap: 10px;
-    margin-bottom: 10px;
+}
+
+.team-cards-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    overflow: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+.arrow-img-left {
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    transition: all .05s ease-in-out;
+    width: 30px;
+    left: 20px;
+    z-index: 10;
+    top: 75px;
+}
+
+.arrow-img-right {
+    cursor: pointer;
+    height: 30px;
+    position: relative;
+    transition: all .05s ease-in-out;
+    width: 30px;
+    right: 20px;
+    z-index: 10;
+    top: 75px;
 }
 
 .teamDas-right-main-div {

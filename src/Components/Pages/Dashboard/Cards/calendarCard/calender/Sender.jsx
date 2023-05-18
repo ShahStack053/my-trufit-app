@@ -9,7 +9,7 @@ const onPanelChange = (value, mode) => {
 };
 
 const Sender = () => {
-  const { token } = theme.useToken();
+  // const { token } = theme.useToken();
   const headerStyle = {
     fontFamily: "Manrope",
     fontStyle: "normal",
@@ -17,16 +17,9 @@ const Sender = () => {
     fontSize: "14px",
     color: "#0B0B0B",
   };
-  //   const dropDownStyle = {
-  //     fontFamily: "Manrope",
-  //     fontStyle: "normal",
-  //     fontWeight: 800,
-  //     fontSize: "20px",
-  //     color: "#0B0B0B",
-  //   };
 
   const yearOptions = [];
-  for (let year = 1979; year <= 2050; year++) {
+  for (let year = 1999; year <= 2050; year++) {
     yearOptions.push(
       <Option key={year} value={year}>
         {year}
@@ -57,16 +50,6 @@ const Sender = () => {
                     className="custom-select"
                     defaultValue={year}
                     onChange={(year) => onChange(value.year(year))}
-                    // style={{
-                    //   marginLeft: "10px",
-                    //   width: "103px",
-                    //   height: "40px",
-                    //   background: "#0081C6",
-                    //   borderRadius: "24px",
-                    //   flex: "none",
-                    //   order: 0,
-                    //   flexGrow: 0,
-                    // }}
                   >
                     {yearOptions}
                   </Select>

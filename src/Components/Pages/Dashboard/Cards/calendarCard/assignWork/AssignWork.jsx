@@ -12,12 +12,12 @@ const AssignWork = () => {
         <div className="assign-work-title-div">
           <span className="assign-work-title-span">Assigned Workouts</span>
           <div className="assign-work-navigator-div">
-            <button className="arrow-image-btn">
-              <img src={arrowLeft} alt="arrowLeft" className="arrow-image" />
-            </button>
-            <button className="arrow-image-btn">
-              <img src={arrowRight} alt="arrowRight" className="arrow-image" />
-            </button>
+            <img src={arrowLeft} alt="arrowLeft" className="arrow-left-image" />
+            <img
+              src={arrowRight}
+              alt="arrowRight"
+              className="arrow-right-image"
+            />
           </div>
         </div>
         <div className="assign-work-detail-div">

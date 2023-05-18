@@ -55,45 +55,50 @@ const CreateWorkOut = () => {
         .map((exercise) => exercise.exercise_id)
         .join(",");
       formData.append("exercise_id", exerciseIds);
-
-      confirm({
-        title: "Do you want to Save changes to Workout?",
-        icon: <ExclamationCircleFilled style={{ color: " #faad14" }} />,
-        okText: "Yes",
-        cancelText: "Cancel",
-        okCancel: true,
-        okButtonProps: { style: { float: "right", marginRight: 10 } },
-        cancelButtonProps: { style: { float: "right" } },
-        onOk() {
-          axios({
-            method: "Post",
-            url: `http://52.205.1.61/app/api/version_1_3/edit_workout`,
-            headers: {
-              Token: localStorage.AuthToken,
-              UserId: localStorage.userId,
-            },
-            data: formData,
-          }).then(
-            (res) => {
-              setExerciseList(res.data.data);
-              Modal.success({
-                content: "Your workout updated successfully",
-              });
-              navigate("/main/workout");
-            },
-            (err) => {
-              Modal.warning({
-                content: err,
-              });
-            }
-          );
-        },
-        onCancel() {
-          Modal.warning({
-            content: "Your workout not updated",
-          });
-        },
-      });
+      if (exerciseList.length !== 0) {
+        confirm({
+          title: "Do you want to Save changes to Workout?",
+          icon: <ExclamationCircleFilled style={{ color: " #faad14" }} />,
+          okText: "Yes",
+          cancelText: "Cancel",
+          okCancel: true,
+          okButtonProps: { style: { float: "right", marginRight: 10 } },
+          cancelButtonProps: { style: { float: "right" } },
+          onOk() {
+            axios({
+              method: "Post",
+              url: `http://52.205.1.61/app/api/version_1_3/edit_workout`,
+              headers: {
+                Token: localStorage.AuthToken,
+                UserId: localStorage.userId,
+              },
+              data: formData,
+            }).then(
+              (res) => {
+                setExerciseList(res.data.data);
+                Modal.success({
+                  content: "Your workout updated successfully",
+                });
+                navigate("/main/workout");
+              },
+              (err) => {
+                Modal.warning({
+                  content: err,
+                });
+              }
+            );
+          },
+          onCancel() {
+            Modal.warning({
+              content: "Your workout not updated",
+            });
+          },
+        });
+      } else {
+        Modal.warning({
+          content: "Please select at least one exercise",
+        });
+      }
     }
     if (label === "Create") {
       const formData = new FormData();
@@ -107,45 +112,50 @@ const CreateWorkOut = () => {
         .map((exercise) => exercise.exercise_id)
         .join(",");
       formData.append("exercise_id", exerciseIds);
-
-      confirm({
-        title: "Do you want to Save Workout?",
-        icon: <ExclamationCircleFilled style={{ color: " #faad14" }} />,
-        okText: "Yes",
-        cancelText: "Cancel",
-        okCancel: true,
-        okButtonProps: { style: { float: "right", marginRight: 10 } },
-        cancelButtonProps: { style: { float: "right" } },
-        onOk() {
-          axios({
-            method: "Post",
-            url: `http://52.205.1.61/app/api/version_1_3/create_workout`,
-            headers: {
-              Token: localStorage.AuthToken,
-              UserId: localStorage.userId,
-            },
-            data: formData,
-          }).then(
-            (res) => {
-              setExerciseList(res.data.data);
-              Modal.success({
-                content: "Your workout saved successfully",
-              });
-              navigate("/main/workout");
-            },
-            (err) => {
-              Modal.warning({
-                content: err,
-              });
-            }
-          );
-        },
-        onCancel() {
-          Modal.warning({
-            content: "Your workout not save",
-          });
-        },
-      });
+      if (exerciseList.length !== 0) {
+        confirm({
+          title: "Do you want to Save Workout?",
+          icon: <ExclamationCircleFilled style={{ color: " #faad14" }} />,
+          okText: "Yes",
+          cancelText: "Cancel",
+          okCancel: true,
+          okButtonProps: { style: { float: "right", marginRight: 10 } },
+          cancelButtonProps: { style: { float: "right" } },
+          onOk() {
+            axios({
+              method: "Post",
+              url: `http://52.205.1.61/app/api/version_1_3/create_workout`,
+              headers: {
+                Token: localStorage.AuthToken,
+                UserId: localStorage.userId,
+              },
+              data: formData,
+            }).then(
+              (res) => {
+                setExerciseList(res.data.data);
+                Modal.success({
+                  content: "Your workout saved successfully",
+                });
+                navigate("/main/workout");
+              },
+              (err) => {
+                Modal.warning({
+                  content: err,
+                });
+              }
+            );
+          },
+          onCancel() {
+            Modal.warning({
+              content: "Your workout not save",
+            });
+          },
+        });
+      } else {
+        Modal.warning({
+          content: "Please select at least one exercise",
+        });
+      }
     }
   };
 
